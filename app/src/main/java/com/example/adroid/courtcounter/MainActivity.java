@@ -16,6 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
+    public void add6(View view) {
+        score = score + 6;
+        updateScore(score, R.id.team_a_score);
+    }
+
     public void add3(View view) {
         score = score + 3;
         updateScore(score, R.id.team_a_score);
@@ -56,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void add3_team_b(View view) {
         score_team_b = score_team_b + 3;
+        updateScore(score_team_b, R.id.team_b_score);
+    }
+
+    public void add6_team_b(View view) {
+        score_team_b = score_team_b + 6;
         updateScore(score_team_b, R.id.team_b_score);
     }
 }
